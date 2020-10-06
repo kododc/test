@@ -22,7 +22,7 @@ const analyzeComment = (callback: any) => {
 		.catch(error => console.error("On get list error", error));
 };
 
-const downloadFile = (itemId: any, callback?: any) => {
+/*const downloadFile = (itemId: any, callback?: any) => {
 	if (callback != null && itemId != null) {
 		axios
 			.get(`${API_URL}/items/${itemId}`, { headers: REQUEST_HEADERS })
@@ -31,7 +31,7 @@ const downloadFile = (itemId: any, callback?: any) => {
 			})
 			.catch(error => console.error("On get list error", error));
 	}
-};
+};*/
 
 // Making a GET request using an axios instance from a connected library
 
@@ -72,9 +72,10 @@ const displayResult = (result: any) => {
 		resultElement.prepend(PrevBtn);
 	}
 };
+/*
 const downloadAction = (result: any) => {
 	var fileDownload = require("js-file-download");
 	fileDownload(result, "filename.csv");
-};
+};*/
 
 analyzeComment(displayResult);
