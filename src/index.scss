@@ -1,0 +1,24 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	padding: 5px;
+	font-size: 14px;
+	color: #333;
+}
+a {
+	color: #000;
+}
+
+.folder,
+.file {
+	text-align: center;
+	a {
+		span {
+			padding-left: 5px;
+		}
+	}
+}
